@@ -1,0 +1,38 @@
+Approver_Designation: Sr. General Manager – Exports
+Approver_Email: 
+Decision_Date: 21-04-2026
+Decision_Text: Approved.
+Requested_By: Vishwakala Shedge <vishwakala.shedge@ajantapharma.com>
+Requested_On: 21-04-2026
+Original_Subject: Bill Submission 21.04.2026
+Attachments: 
+INV_NO: EXP/26-27/9300015189, 9300015190
+Bill_No: SIAEFBO126040151
+Bill_Date: 14/04/2026
+Amt_in_USD: 
+Amt_in_INR: ₹ 2,797,939.00
+Bill_Submission: 1900003433
+Date: 21/04/2026
+Days: 30 Days
+Vendor: Skylink
+Type: Freight
+Remark: 
+Approver_Designation: Sr. General Manager – Exports
+Approver_Email: 
+Decision_Date: 21-04-2026
+Decision_Text: Approved.
+Requested_By: Vishwakala Shedge <vishwakala.shedge@ajantapharma.com>
+Requested_On: 21-04-2026
+Original_Subject: Bill Submission 21.04.2026
+Attachments: 
+INV_NO: EXP/26-27/9300015189, 9300015190
+Bill_No: SIAECBO126040136
+Bill_Date: 14/04/2026
+Amt_in_USD: 
+Amt_in_INR: ₹ 86,971.00
+Bill_Submission: 1900003435
+Date: 21/04/2026
+Days: 30 Days
+Vendor: Skylink
+Type: THC
+Remark: 

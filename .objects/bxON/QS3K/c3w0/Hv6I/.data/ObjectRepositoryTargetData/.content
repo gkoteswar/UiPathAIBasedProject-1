@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gXqAu0ux90y8aYpSyrM95A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="514, 413, 223, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/subADR:SAPLFDCB:0070/txtBNKA-BANKA' /&gt;" Guid="9d3cdf28-147b-4ad1-833a-4253d5fd4dc0" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Edit Parked Vendor Invoice 1900000841 1000 2026' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="81114054ecf237bcc8c1adfe0497c1c8.jpg" xmlns="">0n9xjKqlGTk-bnWQ2RF3T-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

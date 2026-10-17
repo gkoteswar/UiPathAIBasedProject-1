@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="h54rBi2heEinMeoGJS1B7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="208, 268, 130, 20" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colTooltip='Tax Code' id='usr/tabsTS/tabpTAX/ssubPAGE:SAPLTAX1:0501/tblSAPLTAX1STEUER_CTRL' tableRow='0' /&gt;" Guid="d05bc6f8-8100-480d-b51d-ea4b2322ef87" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Edit Parked Vendor Invoice 1900000841 1000 2026' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="3769815e346891cfad821356f9047f9f.jpg" xmlns="">0zvkpPibFV0S4fgLxnOcitA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

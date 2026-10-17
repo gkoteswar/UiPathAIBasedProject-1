@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5jxjiDeDlkOMQPJ0cWJ3RA" Reference="qo4LKVHOVU-iNauPTUsGmw/rAMJdape3UeIwBM90uFjMQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="118, 270, 198, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colName='TEXT' id='usr/cntlALV_CONTAINER_1/shellcont/shell' text='*FB60*' /&gt;" Guid="527202cb-276d-478d-8e4b-9bff6e6cbe24" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='ABAP: Variant Directory of Program RFITEMAP' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="abb625e7688306ac89ec0f75db10113e.jpg" xmlns="">0hwoheuSQgU6g0DW2lSWPZw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

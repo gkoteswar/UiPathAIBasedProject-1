@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1LPtXuUn00ibHnDJ8y8GYA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="0, 0, 516, 228" ElementVisibilityArgument="Interactive" Guid="0c8ae891-dc25-46d3-9b66-153124ad9d6c" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Branch/Head Office' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="e005cb159031f722e977c5d178c64d7b.jpg" xmlns="">02HBYjEGKIECXn7z_ZE5lCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Microsoft Outlook",
+  "Type": "Screen",
+  "Id": "G2u-kwG5dU63nxxnLE7HFA",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/G2u-kwG5dU63nxxnLE7HFA",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/6qfuHrNqV0Klu3HXsJpgdA",
+  "Created": "2026-09-05T10:59:55.7969169Z",
+  "Updated": "2026-09-05T10:59:55.7969169Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

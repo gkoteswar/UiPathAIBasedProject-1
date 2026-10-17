@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ABAP Variant Directory…",
+  "Type": "Element",
+  "Id": "HQ0ERRUNI0ShKEAhQSiFfQ",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/HQ0ERRUNI0ShKEAhQSiFfQ",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/4E8EWrmC_kaQlnRGYDR2dw",
+  "Created": "2026-08-21T08:27:41.7078867Z",
+  "Updated": "2026-08-21T08:27:41.7078867Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

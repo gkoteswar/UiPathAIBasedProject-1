@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pmnt block",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "5whh5b63FEu8jll0sJQ0yA",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/5whh5b63FEu8jll0sJQ0yA",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/c3w0jDk0Nk6SZBxbJvkPTQ",
+  "Created": "2026-08-28T10:20:26.776051Z",
+  "Updated": "2026-08-28T10:20:26.776051Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

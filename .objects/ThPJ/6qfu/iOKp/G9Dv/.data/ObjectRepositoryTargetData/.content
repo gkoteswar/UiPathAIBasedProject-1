@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="h7YDxu1kiUa7AbkLi_BUVg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="59, 155, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd title='Allow' /&gt;" Guid="ff29b855-31e0-436c-88c3-3cbb16579f9e" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='#32770' title='Microsoft Outlook' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="d622d205229ac8335a08b7d54b69b9a5.jpg" xmlns="">0XGeDF-MveUG5DXN-0ff8rw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

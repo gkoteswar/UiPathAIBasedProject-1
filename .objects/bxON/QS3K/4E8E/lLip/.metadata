@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Vendor Line Item Display",
+  "Type": "Element",
+  "Id": "lLipzE29FUurDFboZfCS8g",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/lLipzE29FUurDFboZfCS8g",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/4E8EWrmC_kaQlnRGYDR2dw",
+  "Created": "2026-08-24T06:11:30.2040182Z",
+  "Updated": "2026-08-24T06:11:30.2040182Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

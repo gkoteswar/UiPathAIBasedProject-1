@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Parked items",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "SUvO7_E-2UKWA3pLnV0woA",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/SUvO7_E-2UKWA3pLnV0woA",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/4E8EWrmC_kaQlnRGYDR2dw",
+  "Created": "2026-08-21T07:14:19.9078806Z",
+  "Updated": "2026-08-21T07:14:19.9078806Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

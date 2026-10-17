@@ -1,0 +1,689 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ApproveandReject_Process" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Mail_SnederName_2" Type="InArgument(x:String)" />
+    <x:Property Name="Mail_Body_2" Type="InArgument(x:String)" />
+    <x:Property Name="Mail_Subject_2" Type="InArgument(x:String)" />
+    <x:Property Name="In_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_MsgFilePath" Type="InArgument(x:String)" />
+    <x:Property Name="in_EmailPromptFile" Type="InArgument(x:String)" />
+    <x:Property Name="out_EmailSubject" Type="OutArgument(x:String)" />
+    <x:Property Name="out_EmailApprovalStatus" Type="OutArgument(x:String)" />
+    <x:Property Name="out_EmailApprover" Type="OutArgument(x:String)" />
+    <x:Property Name="out_EmailData" Type="OutArgument(x:String)" />
+  </x:Members>
+  <this:ApproveandReject_Process.In_Config>
+    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" />
+  </this:ApproveandReject_Process.In_Config>
+  <this:ApproveandReject_Process.in_MsgFilePath>
+    <InArgument x:TypeArguments="x:String" />
+  </this:ApproveandReject_Process.in_MsgFilePath>
+  <this:ApproveandReject_Process.in_EmailPromptFile>
+    <InArgument x:TypeArguments="x:String" />
+  </this:ApproveandReject_Process.in_EmailPromptFile>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1094,14856</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ApproveandReject_Process_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Web.Activities.JSON.Models</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ApproveandReject_Process" sap:VirtualizedContainerService.HintSize="1079,2936" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="result" />
+      <Variable x:TypeArguments="njl:JObject" Name="Output_Jsondata" />
+      <Variable x:TypeArguments="njl:JArray" Name="Result_JsonArray" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Ai Based Comparision Of data " sap:VirtualizedContainerService.HintSize="584,2913" sap2010:WorkflowViewState.IdRef="Sequence_212">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" Name="statusCode" />
+        <Variable x:TypeArguments="x:String" Name="PromptText" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="550,57" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_213">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_11">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Promttext]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">["You are reading an email that is provided as the attached file. The email is a reply or forward: the NEWEST message (the approval or rejection written by the approver) is at the TOP, and the ORIGINAL request mail that was sent for approval is quoted BELOW it (it starts with lines like From / Sent / To / Cc / Subject)." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Your task is to extract the approval decision and all the data in the bill table. Return every value exactly as it is written in the email." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"PART 1: DECISION (from the TOP message only)" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Read only the newest message at the top, written by the approver, above the quoted original mail. Ignore the signature block, disclaimers and the quoted original for the decision." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Approval_Status must be exactly one of: Approved / Rejected / Pending / Unclear" &amp; vbCrLf &amp;
+"- Approved: the top message grants approval (e.g. 'Approved', 'Please proceed', 'Go ahead', 'OK to process', 'No objection')." &amp; vbCrLf &amp;
+"- Rejected: the top message refuses or asks to stop (e.g. 'Not approved', 'Rejected', 'Do not process', 'Cannot approve')." &amp; vbCrLf &amp;
+"- Pending: the top message only acknowledges, forwards, or asks a question, with no decision." &amp; vbCrLf &amp;
+"- Unclear: the wording is ambiguous or there is no readable decision." &amp; vbCrLf &amp;
+"Watch for negation: 'not approved' is Rejected, 'no objection' is Approved. Do NOT guess; if unsure use Unclear." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Extract:" &amp; vbCrLf &amp;
+"- Subject: the subject line of the email, exactly as shown at the top (keep prefixes such as FW: or RE:)." &amp; vbCrLf &amp;
+"- Approval_Status: as defined above." &amp; vbCrLf &amp;
+"- Approver_Name: the full name of the person who wrote the top message. Use the sender name in the header, or the name in the signature if the header is not visible. Do not use the name of the person in the quoted original mail." &amp; vbCrLf &amp;
+"- Approver_Designation: the job title in the approver's signature (e.g. Sr. General Manager - Exports). Empty string if not shown." &amp; vbCrLf &amp;
+"- Approver_Email: the approver's email address if shown, otherwise empty string." &amp; vbCrLf &amp;
+"- Decision_Date: the date the approver sent the top message, in dd-MM-yyyy format. Empty string if not shown." &amp; vbCrLf &amp;
+"- Decision_Text: the exact words of the decision in the top message (e.g. Approved)." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"PART 2: ORIGINAL REQUEST DETAILS (from the QUOTED mail below the decision)" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Extract:" &amp; vbCrLf &amp;
+"- Requested_By: the name after 'From:' in the quoted original mail." &amp; vbCrLf &amp;
+"- Requested_On: the date after 'Sent:' in the quoted original mail, in dd-MM-yyyy format." &amp; vbCrLf &amp;
+"- Original_Subject: the subject in the quoted original mail." &amp; vbCrLf &amp;
+"- Attachments: the attachment file names shown on the mail, joined into ONE text separated by semicolons. Empty string if none." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"PART 3: BILL TABLE" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Extract the table that appears BELOW the approval message (in the quoted original mail). Do not use any other table." &amp; vbCrLf &amp;
+"Return EVERY row of the table, in the same order as shown. Do not skip, merge or summarize rows." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Use these keys, matching the table column headings:" &amp; vbCrLf &amp;
+"- INV_NO" &amp; vbCrLf &amp;
+"- Bill_No" &amp; vbCrLf &amp;
+"- Bill_Date" &amp; vbCrLf &amp;
+"- Amt_in_USD" &amp; vbCrLf &amp;
+"- Amt_in_INR" &amp; vbCrLf &amp;
+"- Bill_Submission" &amp; vbCrLf &amp;
+"- Date" &amp; vbCrLf &amp;
+"- Days" &amp; vbCrLf &amp;
+"- Vendor" &amp; vbCrLf &amp;
+"- Type" &amp; vbCrLf &amp;
+"- Remark" &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Table rules:" &amp; vbCrLf &amp;
+"- Copy every cell exactly as written, including letters, slashes, commas, decimals and text such as 'dt 05-03-2026' or '30 Days'." &amp; vbCrLf &amp;
+"- Do NOT convert, round, recalculate or reformat any number or date in the table." &amp; vbCrLf &amp;
+"- If a cell is empty in the table, return an empty string for it. Never copy a value from another row or column and never invent one." &amp; vbCrLf &amp;
+"- If a cell text is split over two lines, join it into one text (e.g. 'Please Pay Without Deduction'). Ignore highlighting or colors." &amp; vbCrLf &amp;
+"- Match each value to its own column heading. Do not shift values into a neighbouring column." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"GENERAL RULES" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"- Do NOT invent any name, date, number or text that is not visible in the email." &amp; vbCrLf &amp;
+"- If a field is not found, use an empty string." &amp; vbCrLf &amp;
+"- The person who requested approval (quoted mail) and the approver (top message) are different people. Do not mix them up." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"OUTPUT FORMAT" &amp; vbCrLf &amp;
+"==================================================" &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Return ONLY a JSON ARRAY. The very first character of your answer must be [ and the last character must be ]." &amp; vbCrLf &amp;
+"Do NOT return a single object starting with {." &amp; vbCrLf &amp;
+"No explanation." &amp; vbCrLf &amp;
+"No markdown." &amp; vbCrLf &amp;
+"No additional text." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Return ONE object for EACH row of the bill table, in the same order as the table." &amp; vbCrLf &amp;
+"Repeat the same decision and mail details (Parts 1 and 2) in every object, so each object is complete on its own." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"Format:" &amp; vbCrLf &amp;
+"[" &amp; vbCrLf &amp;
+"  {" &amp; vbCrLf &amp;
+"    ""Subject"": ""&lt;subject line&gt;""," &amp; vbCrLf &amp;
+"    ""Approval_Status"": ""Approved or Rejected or Pending or Unclear""," &amp; vbCrLf &amp;
+"    ""Approver_Name"": ""&lt;name&gt;""," &amp; vbCrLf &amp;
+"    ""Approver_Designation"": ""&lt;title or empty&gt;""," &amp; vbCrLf &amp;
+"    ""Approver_Email"": ""&lt;email or empty&gt;""," &amp; vbCrLf &amp;
+"    ""Decision_Date"": ""&lt;dd-MM-yyyy or empty&gt;""," &amp; vbCrLf &amp;
+"    ""Decision_Text"": ""&lt;exact decision words&gt;""," &amp; vbCrLf &amp;
+"    ""Requested_By"": ""&lt;name&gt;""," &amp; vbCrLf &amp;
+"    ""Requested_On"": ""&lt;dd-MM-yyyy or empty&gt;""," &amp; vbCrLf &amp;
+"    ""Original_Subject"": ""&lt;subject&gt;""," &amp; vbCrLf &amp;
+"    ""Attachments"": ""&lt;file name 1&gt;; &lt;file name 2&gt;""," &amp; vbCrLf &amp;
+"    ""INV_NO"": """"," &amp; vbCrLf &amp;
+"    ""Bill_No"": """"," &amp; vbCrLf &amp;
+"    ""Bill_Date"": """"," &amp; vbCrLf &amp;
+"    ""Amt_in_USD"": """"," &amp; vbCrLf &amp;
+"    ""Amt_in_INR"": """"," &amp; vbCrLf &amp;
+"    ""Bill_Submission"": """"," &amp; vbCrLf &amp;
+"    ""Date"": """"," &amp; vbCrLf &amp;
+"    ""Days"": """"," &amp; vbCrLf &amp;
+"    ""Vendor"": """"," &amp; vbCrLf &amp;
+"    ""Type"": """"," &amp; vbCrLf &amp;
+"    ""Remark"": """"" &amp; vbCrLf &amp;
+"  }" &amp; vbCrLf &amp;
+"]" &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"If the email has no table, return exactly one object with the mail fields filled in and all the table fields (INV_NO to Remark) as empty strings." &amp; vbCrLf &amp;
+"" &amp; vbCrLf &amp;
+"If the file cannot be read, return:" &amp; vbCrLf &amp;
+"[{""Subject"": """", ""Approval_Status"": ""Unclear"", ""Approver_Name"": """", ""Approver_Designation"": """", ""Approver_Email"": """", ""Decision_Date"": """", ""Decision_Text"": ""File could not be read"", ""Requested_By"": """", ""Requested_On"": """", ""Original_Subject"": """", ""Attachments"": """", ""INV_NO"": """", ""Bill_No"": """", ""Bill_Date"": """", ""Amt_in_USD"": """", ""Amt_in_INR"": """", ""Bill_Submission"": """", ""Date"": """", ""Days"": """", ""Vendor"": """", ""Type"": """", ""Remark"": """"}]"]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <ui:ReadTextFile File="{x:Null}" Content="[PromptText]" DisplayName="Read Text File" FileName="[in_EmailPromptFile]" sap:VirtualizedContainerService.HintSize="550,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="string ext = System.IO.Path.GetExtension(filePath).ToLower();&#xA;string mailText;&#xA;&#xA;if (ext == &quot;.msg&quot;)&#xA;{&#xA;    dynamic outlookApp = null;&#xA;    dynamic mail = null;&#xA;    try&#xA;    {&#xA;        outlookApp = Activator.CreateInstance(Type.GetTypeFromProgID(&quot;Outlook.Application&quot;));&#xA;        mail = outlookApp.CreateItemFromTemplate(filePath);&#xA;&#xA;        var sb = new System.Text.StringBuilder();&#xA;        sb.AppendLine(&quot;Sender: &quot; + (string)mail.SenderName + &quot; (&quot; + (string)mail.SenderEmailAddress + &quot;)&quot;);&#xA;        sb.AppendLine(&quot;Recipients: &quot; + (string)mail.To);&#xA;        sb.AppendLine(&quot;CC: &quot; + (string)mail.CC);&#xA;        sb.AppendLine(&quot;Date sent: &quot; + ((DateTime)mail.SentOn).ToString(&quot;dd-MM-yyyy HH:mm&quot;));&#xA;        sb.AppendLine(&quot;Subject line: &quot; + (string)mail.Subject);&#xA;        sb.AppendLine();&#xA;        sb.AppendLine((string)mail.Body);&#xA;        mailText = sb.ToString();&#xA;    }&#xA;    finally&#xA;    {&#xA;        if (mail != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(mail);&#xA;        if (outlookApp != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(outlookApp);&#xA;    }&#xA;}&#xA;else&#xA;{&#xA;    mailText = System.IO.File.ReadAllText(filePath);&#xA;}&#xA;&#xA;string fullMessage = messageText&#xA;    + &quot;\r\n\r\n=================== EMAIL CONTENT START ===================\r\n&quot;&#xA;    + mailText&#xA;    + &quot;\r\n=================== EMAIL CONTENT END ===================&quot;;&#xA;&#xA;using (var client = new System.Net.Http.HttpClient())&#xA;{&#xA;    client.Timeout = TimeSpan.FromSeconds(300);&#xA;    using (var content = new System.Net.Http.MultipartFormDataContent())&#xA;    {&#xA;        content.Add(new System.Net.Http.StringContent(fullMessage, System.Text.Encoding.UTF8), &quot;message&quot;);&#xA;&#xA;        // Placeholder file, only in case the API insists on a &quot;file&quot; part.&#xA;        // Its content does not look like an email, so it will not be flagged.&#xA;        var ph = new System.Net.Http.ByteArrayContent(&#xA;            System.Text.Encoding.UTF8.GetBytes(&quot;The email content is included in the message field.&quot;));&#xA;        ph.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(&quot;text/plain&quot;);&#xA;        content.Add(ph, &quot;file&quot;, &quot;note.txt&quot;);&#xA;&#xA;        var response = client.PostAsync(apiUrl, content).Result;&#xA;        out_statusCode = (int)response.StatusCode;&#xA;        out_response = response.Content.ReadAsStringAsync().Result;&#xA;    }&#xA;}" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="550,197" sap2010:WorkflowViewState.IdRef="InvokeCode_5" Language="CSharp">
+        <ui:InvokeCode.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_response">[result]</OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="apiUrl">[in_Config("ApiUrl").ToString.Trim]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="messageText">[PromptText]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="filePath">[in_MsgFilePath]</InArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="out_statusCode">[statusCode]</OutArgument>
+        </ui:InvokeCode.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeCode>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="550,175" sap2010:WorkflowViewState.IdRef="LogMessage_138" Level="Info" Message="[statusCode]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="550,174" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[Output_Jsondata]" JsonString="[result]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:DeserializeJson>
+      <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="550,175" sap2010:WorkflowViewState.IdRef="Assign_13">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[out_EmailSubject]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[""]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign Email Approval Status" sap:VirtualizedContainerService.HintSize="550,175" sap2010:WorkflowViewState.IdRef="Assign_14">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[out_EmailApprovalStatus]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[""]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign Email Approver" sap:VirtualizedContainerService.HintSize="550,175" sap2010:WorkflowViewState.IdRef="Assign_15">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[out_EmailApprover]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[""]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign Email Matching Data" sap:VirtualizedContainerService.HintSize="550,175" sap2010:WorkflowViewState.IdRef="Assign_16">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[out_EmailData]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[""]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[String.IsNullOrEmpty(Output_Jsondata.SelectToken(&quot;output&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="550,1403" sap2010:WorkflowViewState.IdRef="If_11">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="548,468" sap2010:WorkflowViewState.IdRef="Sequence_124">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="514,175" sap2010:WorkflowViewState.IdRef="LogMessage_100" Level="Info" Message="[&quot;The array is Null&quot;]" />
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="514,233" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[out_EmailSubject]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[out_EmailApprovalStatus]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[out_EmailApprover]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[out_EmailData]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="548,805" sap2010:WorkflowViewState.IdRef="Sequence_125">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="isErrorExist" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="514,175" sap2010:WorkflowViewState.IdRef="Assign_19">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">[isErrorExist]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+              </Assign.Value>
+            </Assign>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="514,57" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="548,742" sap2010:WorkflowViewState.IdRef="Sequence_215">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="514,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_1" JsonArray="[Result_JsonArray]" JsonString="[Output_Jsondata.SelectToken(&quot;output&quot;).ToString]" />
+                  <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="514,590" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Result_JsonArray]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="njl:JToken">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="njl:JToken" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,468" sap2010:WorkflowViewState.IdRef="Sequence_214">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="EmailBody" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[EmailBody]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">[String.Join(
+    Environment.NewLine,
+    DirectCast(item, Newtonsoft.Json.Linq.JObject).Properties().
+        Where(Function(p) Not {"Subject", "Approval_Status", "Approver_Name"}.Contains(p.Name)).
+        Select(Function(p) p.Name + ": " + p.Value.ToString)
+)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,233" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                            <ui:MultipleAssign.AssignOperations>
+                              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[out_EmailSubject]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[item("Subject").ToString.Trim]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[out_EmailApprovalStatus]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[item("Approval_Status").ToString.Trim]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[out_EmailApprover]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[item("Approver_Name").ToString.Trim]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[out_EmailData]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[If(String.IsNullOrWhiteSpace(out_EmailData), EmailBody, out_EmailData+Environment.NewLine+EmailBody)]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                              </scg:List>
+                            </ui:MultipleAssign.AssignOperations>
+                          </ui:MultipleAssign>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                </Sequence>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548,226" sap2010:WorkflowViewState.IdRef="Sequence_216">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="514,166" sap2010:WorkflowViewState.IdRef="Assign_20">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[isErrorExist]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+              <TryCatch.Finally>
+                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="548,90" sap2010:WorkflowViewState.IdRef="Sequence_217">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </TryCatch.Finally>
+            </TryCatch>
+            <If Condition="[isErrorExist]" sap:VirtualizedContainerService.HintSize="514,513" sap2010:WorkflowViewState.IdRef="If_12">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,293" sap2010:WorkflowViewState.IdRef="Sequence_218">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,233" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                    <ui:MultipleAssign.AssignOperations>
+                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[out_EmailSubject]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[Mail_Subject_2]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[out_EmailApprover]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[Mail_SnederName_2]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[out_EmailApprovalStatus]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[if (not String.IsNullOrWhiteSpace(Mail_Body_2) and (Mail_Body_2.ToLower.Contains("approved") or Mail_Body_2.ToLower.Contains("approval granted") or Mail_Body_2.ToLower.Contains("approval received")),"Approved", "")]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[out_EmailData]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[Mail_Body_2]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                      </scg:List>
+                    </ui:MultipleAssign.AssignOperations>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:MultipleAssign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,90" sap2010:WorkflowViewState.IdRef="Sequence_219">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+  </Sequence>
+</Activity>

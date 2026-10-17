@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KufZKo6zSUq2ew-YIaMa2A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="118, 289, 198, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colName='TEXT' id='usr/cntlALV_CONTAINER_1/shellcont/shell' text='Pending FB60' /&gt;" Guid="8b6e802e-fecb-49c0-aece-2d261f882270" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='ABAP: Variant Directory of Program RFITEMAP' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="1259a083482c5fd565ebba523b438279.jpg" xmlns="">088sjg8QERkmVUYOkXjSvmw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

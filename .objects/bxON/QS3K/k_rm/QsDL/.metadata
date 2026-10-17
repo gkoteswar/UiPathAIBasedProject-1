@@ -1,0 +1,13 @@
+﻿{
+  "Name": "AfxWnd140",
+  "Type": "Element",
+  "Id": "QsDLg-C47Eu7_DAvWr74dw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/QsDLg-C47Eu7_DAvWr74dw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/k_rmM0auOESsa_GLk9JvHg",
+  "Created": "2026-08-21T05:03:07.5176303Z",
+  "Updated": "2026-08-21T05:03:07.5176303Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

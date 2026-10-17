@@ -1,0 +1,14 @@
+﻿{
+  "Name": "IA (Input CGST + SGST 1…",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "w7dbXV8K40OyErivcJtMbw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/w7dbXV8K40OyErivcJtMbw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/c3w0jDk0Nk6SZBxbJvkPTQ",
+  "Created": "2026-08-29T07:37:23.51298Z",
+  "Updated": "2026-08-29T07:37:23.51298Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

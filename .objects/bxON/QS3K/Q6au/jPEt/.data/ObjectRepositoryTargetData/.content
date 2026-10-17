@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="34_6dTHqc0ek1K46-1HEDA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="11, 48, 84, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr' /&gt;&lt;sap text='Layout' type='GuiLabel' /&gt;" Guid="0dc1e243-49aa-4557-a08f-450e794974b1" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Layout: Choose' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="d654df0131918c4095097903483e4d27.jpg" xmlns="">01tt7oeuLRUC9VDq84b2VtA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

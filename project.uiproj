@@ -1,0 +1,6 @@
+{
+  "Name": "FB60 Process BOT",
+  "ProjectType": "Process",
+  "Description": "Robotic Enterprise Framework",
+  "MainFile": "Main.xaml"
+}

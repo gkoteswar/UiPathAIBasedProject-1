@@ -1,0 +1,14 @@
+﻿{
+  "Name": "OF COMMERCE AND INDUSTR…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "FhzkPNWJvUuV-sIR6T9PBw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/FhzkPNWJvUuV-sIR6T9PBw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/c3w0jDk0Nk6SZBxbJvkPTQ",
+  "Created": "2026-08-27T05:42:56.3414295Z",
+  "Updated": "2026-08-27T05:42:56.3414295Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

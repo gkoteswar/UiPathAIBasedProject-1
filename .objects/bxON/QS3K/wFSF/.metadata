@@ -1,0 +1,13 @@
+﻿{
+  "Name": "",
+  "Type": "Screen",
+  "Id": "wFSFrzJnN0GM-zG1s_9d9A",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/wFSFrzJnN0GM-zG1s_9d9A",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/QS3K0AoplkmUkMicEwsUfw",
+  "Created": "2026-08-26T05:31:00.5718196Z",
+  "Updated": "2026-08-26T05:31:00.5718196Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

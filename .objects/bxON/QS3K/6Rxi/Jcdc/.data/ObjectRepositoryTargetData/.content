@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QltmwO6eUEeGZ4pilsntjQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="39, 80, 273, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colName='BITM_FILENAME' id='usr/cntlCONTAINER_0100/shellcont/shell' /&gt;" Guid="021e6cfb-d60d-4686-ae66-96ab5c52d122" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Service: Attachment list' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="5a0e3e02eacf4955b6fbd2fd44534fb7.jpg" xmlns="">0Ia4qyZKiU023TbtttI1LHw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

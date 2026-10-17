@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ASMECHEM CHAMBER",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "FKo3eKEC0UCtaa3bqhDpnA",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/FKo3eKEC0UCtaa3bqhDpnA",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/c3w0jDk0Nk6SZBxbJvkPTQ",
+  "Created": "2026-08-27T05:42:11.1552851Z",
+  "Updated": "2026-08-27T05:42:11.1552851Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

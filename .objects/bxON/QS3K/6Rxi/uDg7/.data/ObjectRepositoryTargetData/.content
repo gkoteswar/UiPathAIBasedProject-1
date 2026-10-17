@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TyMw2dyZzEaJGcckqLIi0g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="0, 0, 649, 426" ElementVisibilityArgument="Interactive" Guid="d27f526d-0cd3-40b7-81f5-2221a6e84590" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Service: Attachment list' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="c6b0d283dbcd9e7ff0521e6029e19160.jpg" xmlns="">0cgJIvMnLdUudOj_hE-1qSw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

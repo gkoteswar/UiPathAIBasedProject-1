@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CTextField Company Code",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "dK0f4v77ikqZe2dN5TCoDQ",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/dK0f4v77ikqZe2dN5TCoDQ",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/4E8EWrmC_kaQlnRGYDR2dw",
+  "Created": "2026-08-21T07:08:42.3004102Z",
+  "Updated": "2026-08-21T07:08:42.3004102Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

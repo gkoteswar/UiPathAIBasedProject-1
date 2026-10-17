@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Layout",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "jPEt1emMDEiRNpZE8XyMBg",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/jPEt1emMDEiRNpZE8XyMBg",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/Q6auPDyz5kqsuV0uEt9rcg",
+  "Created": "2026-08-24T07:04:22.144937Z",
+  "Updated": "2026-08-24T07:04:22.144937Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

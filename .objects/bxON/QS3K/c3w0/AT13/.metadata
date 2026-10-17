@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Withholding tax(1)",
+  "Type": "Element",
+  "Id": "AT13Vru0P0CxWZYCyCydVQ",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/AT13Vru0P0CxWZYCyCydVQ",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/c3w0jDk0Nk6SZBxbJvkPTQ",
+  "Created": "2026-08-29T07:50:14.3865475Z",
+  "Updated": "2026-08-29T07:50:14.3865475Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

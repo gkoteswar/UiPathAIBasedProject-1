@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sKOOlUIqKUy99FN-3F1nvQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="69, 522, 74, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colTooltip='G/L Account' id='usr/subITEMS:SAPLFSKB:0100/tblSAPLFSKBTABLE' tableRow='0' /&gt;" Guid="25361794-fcdb-474c-b87b-00392312efbc" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Edit Parked Vendor Invoice 1900003951 1000 2026' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="e74e5bfd6b4c22697fdf05f3d2d408fa.jpg" xmlns="">0kkq4WbNl4EqbYDXbKKc52Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

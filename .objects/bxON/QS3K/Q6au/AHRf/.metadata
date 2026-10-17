@@ -1,0 +1,14 @@
+﻿{
+  "Name": "BS&PR FORMA",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "AHRfTPvTdkaxN6o98h4AnQ",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/AHRfTPvTdkaxN6o98h4AnQ",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/Q6auPDyz5kqsuV0uEt9rcg",
+  "Created": "2026-08-24T07:08:41.2195539Z",
+  "Updated": "2026-08-24T07:08:41.2195539Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OyijD2zIzkSFMoRGxPXqQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="390, 443, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar[0]/btn[71]' tooltip='Find   (Ctrl+F)' /&gt;" Guid="d089e799-e2f8-48cf-9008-7ecb5c333c3f" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Layout: Choose' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="53a6fecb0376d6006daf332220cbc781.jpg" xmlns="">0Gubzu1WamU-ZwcajcYz00g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

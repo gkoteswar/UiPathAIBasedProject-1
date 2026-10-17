@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YmxTxpkwFkaBv2MaWMiy1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="57, 34, 22, 21" ElementVisibilityArgument="Interactive" Guid="3bcd53f0-5d8d-4389-a4c2-ee323b1ebd4a" ImageAccuracyArgument="0.88" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFcSURBVEhLtdNPSwJBHMbxeW+9iqCjh95AdyGkLkWHokBR3IsdoggiOhRdQurWQakQLFawpSgVW8g/u0/7DMzurKut2HT4wjozvw/roOLkcAP+4BkY2kaiRVP0Whb8YRvwvoxEi6aEMXoF3JtYS7kjiJUtGZ/T1sMCK4LHb4kDHCxfN2R8TlsPC6wQ9ketxIFFYVoRPHgC+pexEkDKuoqWhLuE3SrQOw1b3juX96eAyXvV13lWn6VFU3TsMvz+FdCpyNRhDu6c1X9N4UzN06KZgNVX1Yenpe/LK1kE5htNXoURWB9M2/9/+OOlFHy4AD5LspmDc+7Toinem0X4veO5B1PhwKIpnEYenkGYFk3RfjyA103CetPgWfu0aAq7thuD9Z+WSv4B5tynRVM077cx7kQbf40WTVG/3YTrVPDt5I1Ei6Yo7q+hVl3Hw13OSLRoCquQRSazajSrkMUPBF+9rNOD67kAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='ABAP: Variant Directory of Program RFITEMAP' idx='*' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="f7d1fca0d6ab336435a6bf8e60f51fb6.jpg" xmlns="">0jsqe8iVPgEOs5v_SUACenQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Key for Parking",
+  "Type": "Element",
+  "TaxonomyType": "Container",
+  "Id": "Plq1Pj5MEEShsIoknQDx7g",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/Plq1Pj5MEEShsIoknQDx7g",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/wFSFrzJnN0GM-zG1s_9d9A",
+  "Created": "2026-08-26T07:04:57.5737083Z",
+  "Updated": "2026-08-26T07:04:57.5737083Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

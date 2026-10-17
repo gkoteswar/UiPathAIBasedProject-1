@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Mouse Scroll 'ABAP Variant Directory…'",
+  "Type": "Element",
+  "Id": "HPfCcjl2NEi-rnrZRhvzvw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/HPfCcjl2NEi-rnrZRhvzvw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/eGI59p21b0ivWxxwUut1Cg",
+  "Created": "2026-08-21T09:45:56.4111489Z",
+  "Updated": "2026-08-21T09:45:56.4111489Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

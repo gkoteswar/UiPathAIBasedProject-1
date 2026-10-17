@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aoO0Fh-_9kCl4UmMF-eHag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="622, 399, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar[0]/btn[12]' tooltip='Cancel   (F12)' /&gt;" Guid="989f07a2-25df-47e4-89b6-da4989f578a6" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Service: Attachment list' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="90194afd69b0fb44bbd21b2c74384937.jpg" xmlns="">02I3PIqpXYk6zjMf6ocjIxg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

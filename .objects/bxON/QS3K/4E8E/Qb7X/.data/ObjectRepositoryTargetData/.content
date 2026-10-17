@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ub-kzkjYkU-q0LLCIcUDZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="53, 643, 230, 20" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/chkX_NORM' text='Normal items' /&gt;" Guid="438ca95a-9b7e-4841-ab5f-1a9eb8562e2a" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Vendor Line Item Display' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="890bf1eba401235952b1a3a34a4bca3e.jpg" xmlns="">0MM31e2cod0eG10QDtJQgoQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

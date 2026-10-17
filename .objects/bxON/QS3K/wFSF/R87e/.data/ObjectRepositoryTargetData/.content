@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e0pthBLa-Uax5gl-CB8WiA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="27, 183, 98, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN' /&gt;" Guid="650c6ec9-e744-40f2-bb19-9a222136e5d0" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Edit Parked Vendor Invoice 1900003951 1000 2026' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="2465fbe5b6e47c1a5550b86e47be0f2c.jpg" xmlns="">0hh1Rfrj4rEatU-om8Qk1cA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

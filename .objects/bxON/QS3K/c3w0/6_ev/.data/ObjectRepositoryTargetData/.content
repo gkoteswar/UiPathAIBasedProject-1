@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0dAZkIZDqUS616ouqYaaqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="464, 182, 17, 18" ElementVisibilityArgument="Interactive" Guid="31b4344f-53a1-4c76-81d7-5d9d4bcc10e9" ImageAccuracyArgument="0.83" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAYAAAC9+TVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVDhPpZK7TsMwGEb7cjwIAy+BWBEvAQzdUAVDNxCoqCyw0IGVi1SpBQKp7MR2kkL18X9GhLqlolaGk9ufc6Q4biXaoSmt89sHbO9fYHPvOAo6dH2EN3ePL/iczaKgQ9dHWC2rKarpRxR06NYRV1TykINfjC1hnCDnxRmhE0QyU3wLcySpRrvbxyiZQGV2aU4niEzkQuVFwGuaYWNrFwcnlxg+p3hXJpjT+TeSKusjq0LREdLuXjWPHJ1eQ5uynkdHOmc3sphVfETL6q8KkLUiueyPjnzCXwGyFFGZ8/99HkZ+WJwROkFE51ZeLmBlE60D36VTR3YOe+gP7jEcv0VBh66P9AZP/obVGOjQ9REemuHwBf2MNyCLnfhFAAAAAElFTkSuQmCC" ImageOccurrenceArgument="2" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Edit Parked Vendor Invoice 1900000841 1000 2026' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="0b96f393c1359413541e894f9bed32ee.jpg" xmlns="">0phAxuqz2tEOyK53fasnRlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

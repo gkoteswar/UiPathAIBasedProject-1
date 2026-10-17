@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="I958QRvN3EaG4wK1R93FqQ" Reference="qo4LKVHOVU-iNauPTUsGmw/Y-8aaGeg8kWj8fJTtTzmnQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="3, 32, 83, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/lblDY_PATH' /&gt;" Guid="6cba33be-295a-4bd7-8d5b-959381523bf3" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Vendor Line Item Display' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="45ce03ae86bcd29739903078e3ddb811.jpg" xmlns="">0DQ-zY2VLoUetaY3pUHRimA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

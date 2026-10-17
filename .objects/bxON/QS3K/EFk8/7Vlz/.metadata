@@ -1,0 +1,13 @@
+﻿{
+  "Name": "SAP GUI Security",
+  "Type": "Element",
+  "Id": "7VlzyukvdEqdajKU37GdAQ",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/7VlzyukvdEqdajKU37GdAQ",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/EFk8qUTBDUmRwKfOPmMz5Q",
+  "Created": "2026-09-04T09:43:36.7264346Z",
+  "Updated": "2026-09-04T09:43:36.7264346Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

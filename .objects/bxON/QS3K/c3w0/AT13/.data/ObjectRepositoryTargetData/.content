@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1vk4718C2UiCWqqnvGNWeg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="250, 183, 114, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpWT' text='Withholding tax' /&gt;" Guid="dd054055-8c9a-4de6-afe0-01a386b394f3" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Edit Parked Vendor Invoice 1900000841 1000 2026' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="90d22a079f6ac078dba73c43745dd3b1.jpg" xmlns="">0_dctOb66hUedPousnQpDdg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4NSFgJo2WESly8dBF54eng" Reference="qo4LKVHOVU-iNauPTUsGmw/FcjaeAcBGUCn9V3B8uF-PA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="38, 32, 356, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/txtMESSTXT1' text='No variants found for this selection' /&gt;" Guid="1b92d924-a7fc-4f12-adeb-59a42b412d1a" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Information' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="055667bb142d05899683cd50c1d66483.jpg" xmlns="">0xGxjVTNRtEK10shnlWlb4g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

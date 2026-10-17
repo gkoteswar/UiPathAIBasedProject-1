@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-ycILt-1JU-iUJEAVW9mUQ" Reference="qo4LKVHOVU-iNauPTUsGmw/AHRfTPvTdkaxN6o98h4AnQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="102, 80, 280, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr' /&gt;&lt;sap text='Standard local currency with po no' type='GuiLabel' /&gt;" Guid="ff592f24-4ec3-45d1-b712-e7f996d8cd0d" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Find' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="9c761170bb59ba6c8db6a704a1ff3889.jpg" xmlns="">0bTKwUBfx80mwdJuENcgv0g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DaLp0GAM10G0S733PVm1nQ" Reference="qo4LKVHOVU-iNauPTUsGmw/LwUGk_wRg0Cjn7bT_gGNeg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="369, 157, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar[0]/btn[8]' /&gt;" Guid="90b2833c-88c2-4075-a927-ca1d2ed16a23" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Find Variant' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="df2a413209068e0ec6d3daf4c80971ec.jpg" xmlns="">0tKjROojwk02tM-vd1XzrPA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SAPClickToolbarButton</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

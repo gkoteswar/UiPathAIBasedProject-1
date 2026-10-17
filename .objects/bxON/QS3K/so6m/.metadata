@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edit Parked Vendor Invoice 1900003951 1000 20(1)",
+  "Type": "Screen",
+  "Id": "so6m2yeuckiZVi8_SRm9Ng",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/so6m2yeuckiZVi8_SRm9Ng",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/QS3K0AoplkmUkMicEwsUfw",
+  "Created": "2026-10-09T09:59:23.4365167Z",
+  "Updated": "2026-10-09T09:59:23.4365167Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

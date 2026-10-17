@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qQFi4RfoTEyF_QuUzeD7Gg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="22, 151, 1892, 868" ElementType="Container" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr' /&gt;" Guid="ae745ffc-aa5a-47c7-b055-15d6c52b099e" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Vendor Line Item Display' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="61f682b0a2e126bcdafb48e4c5b1e3bc.jpg" xmlns="">0n_JwNPqn8kWfLyimzJuHcA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SAPClickToolbarButton</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Button Get Variant... (…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "X_tSTk9VpkeUX3lHeu-hPg",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/X_tSTk9VpkeUX3lHeu-hPg",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/4E8EWrmC_kaQlnRGYDR2dw",
+  "Created": "2026-08-21T07:26:54.3704308Z",
+  "Updated": "2026-08-21T07:26:54.3704308Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

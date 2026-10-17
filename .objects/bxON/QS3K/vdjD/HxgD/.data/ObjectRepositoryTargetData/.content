@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6UMYnVfK506kFSx6GkA35Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="3, 183, 164, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl name='Export' /&gt;" Guid="096bf345-fcde-4474-a0ee-c4c55b0fa1cf" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="858d8f3aea165d9d9ca71ad1e45a2894.jpg" xmlns="">0lMVdFrBIgkiuXRR_S6OlRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

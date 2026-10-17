@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Canara Bank, Worli, Mu…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Hv6IOjdVPUSM8wiuiJcs5Q",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/Hv6IOjdVPUSM8wiuiJcs5Q",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/c3w0jDk0Nk6SZBxbJvkPTQ",
+  "Created": "2026-08-27T09:01:59.7686689Z",
+  "Updated": "2026-08-27T09:01:59.7686689Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

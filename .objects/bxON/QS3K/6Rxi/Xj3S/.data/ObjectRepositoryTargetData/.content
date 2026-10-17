@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dkQsrbsGj0-YLJ7br_weKw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="39, 99, 273, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colName='BITM_FILENAME' id='usr/cntlCONTAINER_0100/shellcont/shell' text='FW_ Bill Submission 21_04_2026.msg' /&gt;" Guid="cab78f3b-53d7-4acf-9cef-b832c40cf2fd" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Service: Attachment list' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="000704ca3a394f2a543e23a8fb343c84.jpg" xmlns="">0a0ZhPuvdfEKTmgG3DvZxJg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

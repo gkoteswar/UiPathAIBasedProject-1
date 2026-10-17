@@ -1,0 +1,9 @@
+{
+  "UiPath.Database.Activities": "2.1.1",
+  "UiPath.DocumentProcessing.Contracts": "2.4.0-preview",
+  "UiPath.DocumentUnderstanding.Activities": "3.5.0-preview",
+  "UiPath.MicrosoftOffice365.Activities": "3.11.11",
+  "UiPath.OCR.Activities": "4.5.0-preview",
+  "UiPath.Python.Activities": "2.2.2",
+  "UiPath.WebAPI.Activities": "2.5.2"
+}

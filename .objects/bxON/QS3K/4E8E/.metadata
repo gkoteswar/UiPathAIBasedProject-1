@@ -1,0 +1,13 @@
+﻿{
+  "Name": "SAP Easy Access  -  User Menu for ACCOUNTS BO(1)",
+  "Type": "Screen",
+  "Id": "4E8EWrmC_kaQlnRGYDR2dw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/4E8EWrmC_kaQlnRGYDR2dw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/QS3K0AoplkmUkMicEwsUfw",
+  "Created": "2026-08-21T06:03:54.7062203Z",
+  "Updated": "2026-08-21T06:03:54.7062203Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

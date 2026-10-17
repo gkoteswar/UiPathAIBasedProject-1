@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="f-3vsXEbS0KKIxdjuq8xxQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="59, 155, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd title='Allow' /&gt;" Guid="b82ede75-e7f2-4813-bc54-a4221f27dd81" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='#32770' title='Microsoft Outlook' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="34665d66330979e7b5897ba5d410d0dc.jpg" xmlns="">0TOqdxQcmOEC_CSnPIuTO6A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dmsVLAD2Q0qPAN2T3C2tEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="102, 48, 280, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr' /&gt;&lt;sap text='Layout description' type='GuiLabel' /&gt;" Guid="0e4a0306-2d2c-4de0-936a-c041a730a3ff" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Layout: Choose' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="81c73b9a729a9b4f4c1dc663332ee5b3.jpg" xmlns="">0jhovMkFvL062z9bBoJjaeA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

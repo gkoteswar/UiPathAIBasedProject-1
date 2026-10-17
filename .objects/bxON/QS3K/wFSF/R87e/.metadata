@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Basic data",
+  "Type": "Element",
+  "Id": "R87e5CeytEaXWqxstEGecw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/R87e5CeytEaXWqxstEGecw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/wFSFrzJnN0GM-zG1s_9d9A",
+  "Created": "2026-08-31T10:26:28.9305324Z",
+  "Updated": "2026-08-31T10:26:28.9305324Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

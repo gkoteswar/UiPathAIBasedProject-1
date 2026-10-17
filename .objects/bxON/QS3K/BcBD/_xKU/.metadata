@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CUsersSTEPUSER4Docu…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "_xKUMKlwI0Gh5b9Ajo-7VA",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/_xKUMKlwI0Gh5b9Ajo-7VA",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/BcBDqUkepk2MIBCCwgwqQg",
+  "Created": "2026-09-01T10:30:32.0222317Z",
+  "Updated": "2026-09-01T10:30:32.0222317Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

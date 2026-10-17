@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Service Attachment list",
+  "Type": "Element",
+  "Id": "uDg7wfCfUkWhFlIH9EOLiw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/uDg7wfCfUkWhFlIH9EOLiw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/6RxiYYEf5km74JFUwQx_EA",
+  "Created": "2026-09-01T10:03:03.4482365Z",
+  "Updated": "2026-09-01T10:03:03.4482365Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

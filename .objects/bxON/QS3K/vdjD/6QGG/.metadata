@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Attachment list",
+  "Type": "Element",
+  "Id": "6QGGa3GHnU64pN5HCYuw1w",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/6QGGa3GHnU64pN5HCYuw1w",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/vdjDi8gk40iQZIviR2qEZw",
+  "Created": "2026-09-01T10:00:42.7471855Z",
+  "Updated": "2026-09-01T10:00:42.7471855Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

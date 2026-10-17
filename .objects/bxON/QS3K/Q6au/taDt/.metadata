@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CTEMP",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "taDtNMak6EaPMxYMnWMRtQ",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/taDtNMak6EaPMxYMnWMRtQ",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/Q6auPDyz5kqsuV0uEt9rcg",
+  "Created": "2026-08-24T07:23:55.5503565Z",
+  "Updated": "2026-08-24T07:23:55.5503565Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

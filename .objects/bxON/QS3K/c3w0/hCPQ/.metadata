@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Button Exit (Shift+F3)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "hCPQNq9cgU-UXqacUwd0eA",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/hCPQNq9cgU-UXqacUwd0eA",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/c3w0jDk0Nk6SZBxbJvkPTQ",
+  "Created": "2026-08-27T06:49:24.2307524Z",
+  "Updated": "2026-08-27T06:49:24.2307524Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,116 @@
+"You are reading an email that is provided as the attached file. The email is a reply or forward: the NEWEST message (the approval or rejection written by the approver) is at the TOP, and the ORIGINAL request mail that was sent for approval is quoted BELOW it (it starts with lines like From / Sent / To / Cc / Subject)." & vbCrLf &
+"" & vbCrLf &
+"Your task is to extract the approval decision and all the data in the bill table. Return every value exactly as it is written in the email." & vbCrLf &
+"" & vbCrLf &
+"==================================================" & vbCrLf &
+"PART 1: DECISION (from the TOP message only)" & vbCrLf &
+"==================================================" & vbCrLf &
+"" & vbCrLf &
+"Read only the newest message at the top, written by the approver, above the quoted original mail. Ignore the signature block, disclaimers and the quoted original for the decision." & vbCrLf &
+"" & vbCrLf &
+"Approval_Status must be exactly one of: Approved / Rejected / Pending / Unclear" & vbCrLf &
+"- Approved: the top message grants approval (e.g. 'Approved', 'Please proceed', 'Go ahead', 'OK to process', 'No objection')." & vbCrLf &
+"- Rejected: the top message refuses or asks to stop (e.g. 'Not approved', 'Rejected', 'Do not process', 'Cannot approve')." & vbCrLf &
+"- Pending: the top message only acknowledges, forwards, or asks a question, with no decision." & vbCrLf &
+"- Unclear: the wording is ambiguous or there is no readable decision." & vbCrLf &
+"Watch for negation: 'not approved' is Rejected, 'no objection' is Approved. Do NOT guess; if unsure use Unclear." & vbCrLf &
+"" & vbCrLf &
+"Extract:" & vbCrLf &
+"- Subject: the subject line of the email, exactly as shown at the top (keep prefixes such as FW: or RE:)." & vbCrLf &
+"- Approval_Status: as defined above." & vbCrLf &
+"- Approver_Name: the full name of the person who wrote the top message. Use the sender name in the header, or the name in the signature if the header is not visible. Do not use the name of the person in the quoted original mail." & vbCrLf &
+"- Approver_Designation: the job title in the approver's signature (e.g. Sr. General Manager - Exports). Empty string if not shown." & vbCrLf &
+"- Approver_Email: the approver's email address if shown, otherwise empty string." & vbCrLf &
+"- Decision_Date: the date the approver sent the top message, in dd-MM-yyyy format. Empty string if not shown." & vbCrLf &
+"- Decision_Text: the exact words of the decision in the top message (e.g. Approved)." & vbCrLf &
+"" & vbCrLf &
+"==================================================" & vbCrLf &
+"PART 2: ORIGINAL REQUEST DETAILS (from the QUOTED mail below the decision)" & vbCrLf &
+"==================================================" & vbCrLf &
+"" & vbCrLf &
+"Extract:" & vbCrLf &
+"- Requested_By: the name after 'From:' in the quoted original mail." & vbCrLf &
+"- Requested_On: the date after 'Sent:' in the quoted original mail, in dd-MM-yyyy format." & vbCrLf &
+"- Original_Subject: the subject in the quoted original mail." & vbCrLf &
+"- Attachments: the attachment file names shown on the mail, joined into ONE text separated by semicolons. Empty string if none." & vbCrLf &
+"" & vbCrLf &
+"==================================================" & vbCrLf &
+"PART 3: BILL TABLE" & vbCrLf &
+"==================================================" & vbCrLf &
+"" & vbCrLf &
+"Extract the table that appears BELOW the approval message (in the quoted original mail). Do not use any other table." & vbCrLf &
+"Return EVERY row of the table, in the same order as shown. Do not skip, merge or summarize rows." & vbCrLf &
+"" & vbCrLf &
+"Use these keys, matching the table column headings:" & vbCrLf &
+"- INV_NO" & vbCrLf &
+"- Bill_No" & vbCrLf &
+"- Bill_Date" & vbCrLf &
+"- Amt_in_USD" & vbCrLf &
+"- Amt_in_INR" & vbCrLf &
+"- Bill_Submission" & vbCrLf &
+"- Date" & vbCrLf &
+"- Days" & vbCrLf &
+"- Vendor" & vbCrLf &
+"- Type" & vbCrLf &
+"- Remark" & vbCrLf &
+"" & vbCrLf &
+"Table rules:" & vbCrLf &
+"- Copy every cell exactly as written, including letters, slashes, commas, decimals and text such as 'dt 05-03-2026' or '30 Days'." & vbCrLf &
+"- Do NOT convert, round, recalculate or reformat any number or date in the table." & vbCrLf &
+"- If a cell is empty in the table, return an empty string for it. Never copy a value from another row or column and never invent one." & vbCrLf &
+"- If a cell text is split over two lines, join it into one text (e.g. 'Please Pay Without Deduction'). Ignore highlighting or colors." & vbCrLf &
+"- Match each value to its own column heading. Do not shift values into a neighbouring column." & vbCrLf &
+"" & vbCrLf &
+"==================================================" & vbCrLf &
+"GENERAL RULES" & vbCrLf &
+"==================================================" & vbCrLf &
+"" & vbCrLf &
+"- Do NOT invent any name, date, number or text that is not visible in the email." & vbCrLf &
+"- If a field is not found, use an empty string." & vbCrLf &
+"- The person who requested approval (quoted mail) and the approver (top message) are different people. Do not mix them up." & vbCrLf &
+"" & vbCrLf &
+"==================================================" & vbCrLf &
+"OUTPUT FORMAT" & vbCrLf &
+"==================================================" & vbCrLf &
+"" & vbCrLf &
+"Return ONLY a JSON ARRAY. The very first character of your answer must be [ and the last character must be ]." & vbCrLf &
+"Do NOT return a single object starting with {." & vbCrLf &
+"No explanation." & vbCrLf &
+"No markdown." & vbCrLf &
+"No additional text." & vbCrLf &
+"" & vbCrLf &
+"Return ONE object for EACH row of the bill table, in the same order as the table." & vbCrLf &
+"Repeat the same decision and mail details (Parts 1 and 2) in every object, so each object is complete on its own." & vbCrLf &
+"" & vbCrLf &
+"Format:" & vbCrLf &
+"[" & vbCrLf &
+"  {" & vbCrLf &
+"    ""Subject"": ""<subject line>""," & vbCrLf &
+"    ""Approval_Status"": ""Approved or Rejected or Pending or Unclear""," & vbCrLf &
+"    ""Approver_Name"": ""<name>""," & vbCrLf &
+"    ""Approver_Designation"": ""<title or empty>""," & vbCrLf &
+"    ""Approver_Email"": ""<email or empty>""," & vbCrLf &
+"    ""Decision_Date"": ""<dd-MM-yyyy or empty>""," & vbCrLf &
+"    ""Decision_Text"": ""<exact decision words>""," & vbCrLf &
+"    ""Requested_By"": ""<name>""," & vbCrLf &
+"    ""Requested_On"": ""<dd-MM-yyyy or empty>""," & vbCrLf &
+"    ""Original_Subject"": ""<subject>""," & vbCrLf &
+"    ""Attachments"": ""<file name 1>; <file name 2>""," & vbCrLf &
+"    ""INV_NO"": """"," & vbCrLf &
+"    ""Bill_No"": """"," & vbCrLf &
+"    ""Bill_Date"": """"," & vbCrLf &
+"    ""Amt_in_USD"": """"," & vbCrLf &
+"    ""Amt_in_INR"": """"," & vbCrLf &
+"    ""Bill_Submission"": """"," & vbCrLf &
+"    ""Date"": """"," & vbCrLf &
+"    ""Days"": """"," & vbCrLf &
+"    ""Vendor"": """"," & vbCrLf &
+"    ""Type"": """"," & vbCrLf &
+"    ""Remark"": """"" & vbCrLf &
+"  }" & vbCrLf &
+"]" & vbCrLf &
+"" & vbCrLf &
+"If the email has no table, return exactly one object with the mail fields filled in and all the table fields (INV_NO to Remark) as empty strings." & vbCrLf &
+"" & vbCrLf &
+"If the file cannot be read, return:" & vbCrLf &
+"[{""Subject"": """", ""Approval_Status"": ""Unclear"", ""Approver_Name"": """", ""Approver_Designation"": """", ""Approver_Email"": """", ""Decision_Date"": """", ""Decision_Text"": ""File could not be read"", ""Requested_By"": """", ""Requested_On"": """", ""Original_Subject"": """", ""Attachments"": """", ""INV_NO"": """", ""Bill_No"": """", ""Bill_Date"": """", ""Amt_in_USD"": """", ""Amt_in_INR"": """", ""Bill_Submission"": """", ""Date"": """", ""Days"": """", ""Vendor"": """", ""Type"": """", ""Remark"": """"}]"

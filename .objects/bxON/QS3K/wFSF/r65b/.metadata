@@ -1,0 +1,13 @@
+﻿{
+  "Name": "SAP Easy Access - User …",
+  "Type": "Element",
+  "Id": "r65boLwxB02Jqh1Rlnq4Bw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/r65boLwxB02Jqh1Rlnq4Bw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/wFSFrzJnN0GM-zG1s_9d9A",
+  "Created": "2026-08-28T05:00:20.8840202Z",
+  "Updated": "2026-08-28T05:00:20.8840202Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

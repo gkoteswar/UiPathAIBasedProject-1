@@ -1,0 +1,14 @@
+﻿{
+  "Name": "1 minute",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "47PbuxxQs0Sl_rfMw1uMDw",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/47PbuxxQs0Sl_rfMw1uMDw",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/xZ6tp9b-Ik2x3Ar251rwTg",
+  "Created": "2026-09-07T05:36:39.0567556Z",
+  "Updated": "2026-09-07T05:36:39.0567556Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

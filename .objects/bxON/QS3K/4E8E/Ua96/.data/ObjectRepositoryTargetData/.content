@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LXTWs_DHDk2cYL4K8s0YrQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="424, 355, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap tooltip='Delete Entire Selection   (Shift+F4)' /&gt;" Guid="0b49fb94-2e8c-48d5-9bae-2a498f632d38" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' idx='*' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="a49acb2d8bf485f08d5566c4247a424e.jpg" xmlns="">0E3ctdIZzZEefRxw2TjKVSA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

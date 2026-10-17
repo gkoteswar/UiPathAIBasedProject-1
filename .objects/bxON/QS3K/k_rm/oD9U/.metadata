@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Afx65CC00001008",
+  "Type": "Element",
+  "Id": "oD9Ug2m9mUiiM3jR7IqPEA",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/oD9Ug2m9mUiiM3jR7IqPEA",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/k_rmM0auOESsa_GLk9JvHg",
+  "Created": "2026-08-21T04:59:22.235244Z",
+  "Updated": "2026-08-21T04:59:22.235244Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

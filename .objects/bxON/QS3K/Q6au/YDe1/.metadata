@@ -1,0 +1,13 @@
+﻿{
+  "Name": "saplogon.exe Vendor Lin…",
+  "Type": "Element",
+  "Id": "YDe1DKw1H06cOw_0uaiL8A",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/YDe1DKw1H06cOw_0uaiL8A",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/Q6auPDyz5kqsuV0uEt9rcg",
+  "Created": "2026-08-24T07:14:21.7677272Z",
+  "Updated": "2026-08-24T07:14:21.7677272Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

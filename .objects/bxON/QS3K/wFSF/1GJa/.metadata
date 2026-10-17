@@ -1,0 +1,14 @@
+﻿{
+  "Name": "TextField Fiscal Year",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "1GJaYsmJMEiXNhlhnzyZng",
+  "Reference": "qo4LKVHOVU-iNauPTUsGmw/1GJaYsmJMEiXNhlhnzyZng",
+  "ParentRef": "qo4LKVHOVU-iNauPTUsGmw/wFSFrzJnN0GM-zG1s_9d9A",
+  "Created": "2026-08-26T06:14:22.6361438Z",
+  "Updated": "2026-08-26T06:14:22.6361438Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.33.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
